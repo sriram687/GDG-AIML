@@ -1,0 +1,85 @@
+:root {
+	--primary: #2B6CB0;
+	--accent: #00B5D8;
+	--bg: #0f172a;
+	--card: #111827;
+	--muted: #94a3b8;
+	--pos: #38A169;
+	--neg: #E53E3E;
+	--warn: #DD6B20;
+}
+
+/* Global */
+html, body {
+	background: var(--bg);
+	color: #e5e7eb !important;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: var(--primary);
+	margin-bottom: .25rem;
+}
+
+.header .subtitle {
+	color: var(--muted);
+	margin-top: 0;
+}
+
+/* Cards */
+.metric-card {
+	background: var(--card);
+	border-radius: 16px;
+	box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+	padding: 18px 20px;
+	transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.metric-card:hover { transform: translateY(-2px); }
+
+.metric-title { color: var(--muted); font-size: .9rem; }
+.metric-value { font-size: 2rem; font-weight: 700; }
+
+.priority-low { border-left: 4px solid var(--pos); }
+.priority-med { border-left: 4px solid var(--accent); }
+.priority-high { border-left: 4px solid var(--warn); }
+.priority-urgent { border-left: 4px solid var(--neg); }
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+	background: #0b1324;
+	border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Widgets */
+.stButton>button, .stDownloadButton>button {
+	background: linear-gradient(135deg, var(--primary), var(--accent));
+	color: white;
+	border: 0;
+	border-radius: 12px;
+	box-shadow: 0 4px 14px rgba(0,0,0,.25);
+	padding: .6rem 1rem;
+}
+
+.stSelectbox, .stTextInput, .stMultiSelect, .stNumberInput {
+	background: var(--card);
+	border-radius: 12px;
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Expanders */
+details {
+	background: var(--card) !important;
+	border-radius: 14px !important;
+	box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+
+/* AgGrid */
+.ag-theme-streamlit-dark {
+	--ag-foreground-color: #e5e7eb;
+	--ag-background-color: #0f172a;
+	--ag-header-background-color: #0b1324;
+	--ag-borders: rgba(255,255,255,0.1);
+}
+
