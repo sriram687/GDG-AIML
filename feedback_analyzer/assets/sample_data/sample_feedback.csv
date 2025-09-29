@@ -1,0 +1,8 @@
+id,date,source,customer_id,text
+1,2025-09-01,Email,1001,"The new update is great, but the login is slow on mobile."
+2,2025-09-02,App Store,1002,"Billing failed twice and support didn't reply for 3 days."
+3,2025-09-03,Twitter,1003,"Love the UI! Would be awesome to have dark mode on Android."
+4,2025-09-04,Web,1004,"Critical bug: checkout crashes when applying coupon. Please fix ASAP!"
+5,2025-09-05,Email,1005,"I'm considering canceling because invoices keep getting duplicated."
+6,2025-09-06,Web,1006,"Super fast performance this week, thanks for the improvements!"
+
